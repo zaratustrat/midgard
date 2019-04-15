@@ -1,0 +1,52 @@
+.video
+ padding: 124px 0 279px 
+ background: url('../img/video/background.png')no-repeat center
+ &-subtitle 
+  font-size: 45px 
+  color: white 
+  margin-bottom: 54px 
+ &-common 
+  display: flex 
+  justify-content: center  
+  align-items: center 
+ &-text__left,
+ &-text__right 
+  font-size: 20px
+  color: white 
+ .button-video img 
+  background-size: 100%
+ .button-video
+  background: url('../img/video/play.png')no-repeat center
+  background-size: contain 
+  width: 190px 
+  height: 190px
+  border-radius: 50% 
+  &:hover 
+   cursor: pointer
+   transform: scale(1.1) 
+  &:focus
+   outline: none 
+
+@media (max-width: 1199px)
+  .container
+    width: 941px
+@media (max-width: 992px) 
+  .container
+    width: 767px
+  .video 
+   &-subtitle 
+    font-size: 40px
+@media (max-width: 768px)
+  .container
+    width: 576px
+  .video 
+   &-subtitle 
+    font-size: 35px 
+    text-align: center  
+@media(max-width: 577px)
+  .container
+    width: 95%
+  .video 
+    &-text__left,
+    &-text__right
+      text-align: center      

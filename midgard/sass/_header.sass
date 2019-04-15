@@ -1,0 +1,61 @@
+.header
+  padding: 31px 0 44px
+  background: #000000 url('../img/header/background.png')no-repeat 76% 63%
+  background-size: auto
+  &-common 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+  &-logo > img 
+    max-width: 100% 
+  &-text__phone 
+    display: flex 
+    align-items: center 
+    position: relative
+    &:before 
+      content: ''
+      background: url('../img/header/phone.png') no-repeat 
+      position: absolute
+      width: 33px 
+      height: 33px 
+      top: 0px 
+      left: -50px 
+  &-text
+    color: #656363 
+    font-size: 25px 
+    font-weight: bold 
+    margin-right: 10px
+  &__phone 
+    font-size: 35px 
+    font-weight: bold  
+    color: #ffffff 
+    margin-bottom: 5px
+  span 
+    font-size: 30px
+    vertical-align: top
+
+
+@media (max-width: 992px) 
+  .container
+    width: 767px
+  .header 
+   &-common 
+    flex-direction: column
+   &-logo 
+    margin-bottom: 30px   
+@media (max-width: 768px)
+  .container
+    width: 576px
+@media(max-width: 577px)
+  .container
+    width: 95%
+  .header 
+   &-text__phone 
+    flex-direction: column  
+    &:before 
+     top: 30px 
+     left: -40px     
+
+
+  
+
