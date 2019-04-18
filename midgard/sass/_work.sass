@@ -1,0 +1,100 @@
+.work 
+  padding: 0 0 166px
+  color: white
+  &-common 
+    display: flex 
+  &-subtitle 
+    font-size: 35px
+    margin-right: 100px
+    margin-bottom: 63px 
+  &-text 
+    padding-left: 7px
+    font-size: 18px 
+    max-width: 404px 
+    width: 100% 
+    line-height: 26px 
+    position: relative
+    &:before 
+      content: ''
+      border-left: 3px solid #1f50a3 
+      display: block
+      position: absolute  
+      width: 3px
+      left: -19px
+      top: 5px
+      height: 48px
+   
+  input
+    display: none 
+    &:checked + label 
+      color: #1f50a2 
+      border-bottom: 3px solid #1f50a2 
+  input[id="tab1"]:checked ~ .sliders .tab1,
+  input[id="tab2"]:checked ~ .sliders .tab2,
+  input[id="tab3"]:checked ~ .sliders .tab3 
+    display: block   
+  label 
+    border-bottom: 3px solid #ffffff  
+    padding: 0 34px 2px 34px 
+    font-size: 18px 
+    cursor: pointer
+  .fas 
+    margin-left: 15px      
+  &-tabs
+    position: relative
+  .arrow 
+    width: 40px
+    height: 29px
+    position: absolute
+    &:hover
+      cursor: pointer
+    &_right  
+      left: 96%
+      top: -58px
+      background: url('../img/work/arrow-right.png') no-repeat center
+      background-size: 100%
+      &:hover 
+        background: url('../img/work/arrow-right__blue.png')
+    &_left
+      left: 91%
+      top: -58px
+      background: url('../img/work/arrow-left.png') no-repeat center
+      background-size: 100% 
+      &:hover 
+        background: url('../img/work/arrow-left__blue.png')     
+  .tabs-wrap
+    display: flex 
+    max-width: 478px
+    width: 100% 
+    margin-bottom: 42px 
+    // position: relative 
+  .item-wrap, .item-block3__1 
+      display: flex 
+  .img1
+    margin-bottom: 16px 
+    margin-right: 16px
+  .item-block2
+    margin-right: 18px
+  .img4
+    margin-bottom: 14px
+  .item-block3__1 
+    justify-content: space-between  
+  .black
+      filter: grayscale(100%)
+  .top
+    border: 2px solid red 
+  
+        
+  // .sliders 
+  //   position: relative
+  //   section    
+  //     position: absolute 
+  //     top: 0 
+  //     left: 0 
+  //     padding-bottom: 166px 
+  //     display: none
+         
+
+
+    
+    
